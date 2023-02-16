@@ -14,6 +14,7 @@
 <body>
     <header id="mainHeader">
         <img id="logo" src="assets/Logo_SSINGH.jpg" height="80px" alt="SSingh Project 1 Logo" />
+        <h1>OVERALL FAVORITE</h1>
         <nav>
             <ul>
                 <a href="index.html" class="active-page navLink">
@@ -38,7 +39,7 @@
                 </a>
             </ul>
         </nav>
-        <h1>OVERALL FAVORITE</h1>
+
     </header>
     <main>
         <article>
@@ -61,7 +62,7 @@
                         <dt>
                             <h3>
                                 <!--Readonly attribute highlighting my rating for the game-->
-                                <li class="kserif">Slay The Spire <input readonly value="9/10"></input></li>
+                                <li id="1" class="kserif">Slay The Spire <input readonly value="9/10"></input></li>
                             </h3>
                         </dt>
                         <dd>
@@ -96,7 +97,8 @@
                         </dd>
                         <dt>
                             <h3>
-                                <li class="kserif">Grand Theft Auto: San Andreas <input readonly value="9/10"></input>
+                                <li id="2" class="kserif">Grand Theft Auto: San Andreas <input readonly
+                                        value="9/10"></input>
                                 </li>
                             </h3>
                         </dt>
@@ -127,7 +129,8 @@
                         </dd>
                         <dt>
                             <h3>
-                                <li class="kserif">Tom Clancy's Rainbow Six Siege <input readonly value="8/10"></input>
+                                <li id="3" class="kserif">Tom Clancy's Rainbow Six Siege <input readonly
+                                        value="8/10"></input>
                                 </li>
                             </h3>
                         </dt>
@@ -159,16 +162,16 @@
                     </dl>
                 </ol>
             </section>
-            <section>
-                <label for="favChoice">Enter the number of the game you like best: </label>
-
+            <section id="userFavChoice">
+                <label for="favChoice">Enter the number of the game you like above: </label>
+                <!-- used pattern to define what is acceptable in the input field-->
                 <input name="favChoice" type="text" id="choice" pattern="[1-3]" required></input>
                 <button onclick="sendAlert(event)" name="favChoice">Submit</button>
                 <script>
                     function sendAlert(e) {
                         let choice = document.getElementById('choice').value
                         if (choice < 4 && choice > 0) {
-                            alert("Mine too!")
+                            window.location.href = "#" + choice;
                         }
                     }
                 </script>
