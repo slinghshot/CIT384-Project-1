@@ -8,12 +8,20 @@ h1 {
 }
 h2 {
   font-size: 36px;
+  color: rgb(37, 37, 37);
 }
 h3 {
   font-size: 30px;
+  color: rgb(37, 37, 37);
 }
 h4 {
   font-size: 24px;
+  color: rgb(37, 37, 37);
+}
+.subheading {
+  margin-bottom: -10px;
+  text-decoration: underline;
+  color: rgb(37, 37, 37);
 }
 
 /* dl {
@@ -142,9 +150,13 @@ dd > p {
   color: rgb(64, 64, 64);
   /* text-indent: 3%; */
 }
+.upDesc {
+  text-align: justify;
+}
 p {
   font-size: 22px;
   font-family: "Fira Sans", sans-serif;
+  color: rgb(64, 64, 64);
 }
 
 footer {
@@ -206,7 +218,7 @@ form label {
 }
 .mediaContent {
   height: 315px;
-  width: 560px;
+  width: 540px;
   padding-right: 20px;
   padding-bottom: 10px;
 }
