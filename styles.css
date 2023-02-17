@@ -3,6 +3,7 @@
 }
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(2, 2, 45, 0.836);
   /* border: solid 2px; */
 }
 h2 {
@@ -11,6 +12,10 @@ h2 {
 h3 {
   font-size: 30px;
 }
+h4 {
+  font-size: 24px;
+}
+
 /* dl {
   font-family: "Kreon", serif;
 } */
@@ -18,17 +23,20 @@ h3 {
   font-family: "Kreon", serif;
 }
 html {
+  overflow-y: scroll;
   background-image: url("assets/controller.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: 100%;
   background-size: cover;
 }
 body {
-  padding: 0px 140px 0px 140px;
+  /* padding: 0px 140px 0px 140px; */
+  padding: 0px 100px;
   border: solid 1px;
   background: #f1eded;
   opacity: 98%;
-  width: 60%;
+  width: 75%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -83,6 +91,8 @@ ul {
   display: inline;
   color: rgb(250, 250, 250);
   font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.08em;
+  font-family: "Kreon", serif;
 }
 
 summary {
@@ -92,17 +102,21 @@ summary {
 }
 
 details {
-  border: 1px solid #aaa;
-  border-radius: 4px;
+  border: 1px solid #0e2962;
+  border-radius: 2px;
   padding: 0.5em 0.5em 0;
+  width: 80%;
 }
 details[open] {
   padding: 0.5em;
 }
 
 details[open] summary {
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #0e2962;
   margin-bottom: 0.5em;
+}
+details p {
+  font-size: 1em;
 }
 
 aside {
@@ -124,11 +138,13 @@ dd {
 dd > p {
   /* border: solid 2px; */
   font-family: Arial, Helvetica, sans-serif;
-  width: 55%;
+  /* width: 55%; */
   text-align: justify;
+  color: rgb(64, 64, 64);
+  /* text-indent: 3%; */
 }
 p {
-  font-size: 18px;
+  font-size: 22px;
   font-family: "Fira Sans", sans-serif;
 }
 
@@ -142,13 +158,63 @@ li > input {
   width: 35px;
   font-weight: bold;
 }
-img {
-  padding-bottom: 20px;
-}
+/* img {
+  padding-right: 20px;
+} */
 
 input:invalid {
   background-color: lightpink;
 }
 #userFavChoice {
   text-align: right;
+}
+caption {
+  text-align: center;
+  font-size: 1.5em;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 40%;
+}
+td,
+th {
+  border: 1px solid #bbbbbb;
+  text-align: center;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+form {
+  border: dashed 2px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  width: calc(50%-100px);
+  /* width: 50%; */
+  /* float: calc(50% - 100px); */
+}
+form > input {
+  text-align: center;
+}
+form label {
+  display: block;
+  padding-bottom: 5px;
+}
+.media {
+  width: 110%;
+}
+.mediaContent {
+  height: 315px;
+  width: 560px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 2000px) {
+  .mediaContent {
+    height: 400px;
+    width: 711px;
+    padding-right: 40px;
+  }
 }
