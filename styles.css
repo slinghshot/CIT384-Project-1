@@ -202,9 +202,16 @@ form label {
 }
 .mediaContent {
   height: 315px;
-  width: 540px;
-  padding-right: 20px;
+  width: 460px;
+  padding-right: 15px;
   padding-bottom: 10px;
+}
+@media screen and (min-width: 1800px) {
+  .mediaContent {
+    height: 315px;
+    width: 540px;
+    padding-right: 15px;
+  }
 }
 @media screen and (min-width: 2000px) {
   .mediaContent {
