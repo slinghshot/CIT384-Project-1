@@ -4,7 +4,6 @@
 h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: rgba(2, 2, 45, 0.836);
-  /* border: solid 2px; */
 }
 h2 {
   font-size: 36px;
@@ -23,10 +22,6 @@ h4 {
   text-decoration: underline;
   color: rgb(37, 37, 37);
 }
-
-/* dl {
-  font-family: "Kreon", serif;
-} */
 .kserif {
   font-family: "Kreon", serif;
 }
@@ -39,7 +34,6 @@ html {
   background-size: cover;
 }
 body {
-  /* padding: 0px 140px 0px 140px; */
   padding: 0px 100px;
   border: solid 1px;
   background: #f1eded;
@@ -72,13 +66,10 @@ a:active {
   color: lightsteelblue;
 }
 ul {
-  /* border: solid 2px red; */
   margin: 20px;
   display: inline;
-  /* padding: 0px -8px 5px 6px; */
 }
 .navLink {
-  /* border: solid 2px; */
   background-color: #000b5eff;
   padding: 10px;
   margin: 2px;
@@ -86,7 +77,6 @@ ul {
 }
 .active-page {
   background-color: rgb(108, 137, 218);
-  /* border: solid -2px; */
   padding: 10px;
   border-radius: 5px;
 }
@@ -107,7 +97,10 @@ summary {
   margin: -0.5em -0.5em 0;
   padding: 0.5em;
 }
-
+a > span {
+  color: #000099;
+  text-decoration: underline;
+}
 details {
   border: 1px solid #0e2962;
   border-radius: 2px;
@@ -123,7 +116,7 @@ details[open] summary {
   margin-bottom: 0.5em;
 }
 details p {
-  font-size: 1em;
+  font-size: 1.05em;
 }
 
 aside {
@@ -131,7 +124,6 @@ aside {
   padding-left: 0.5rem;
   margin-left: 0.5rem;
   float: right;
-  /* box-shadow: inset 5px 0 5px -5px #29627e; */
   font-style: italic;
   color: #272830;
 }
@@ -143,12 +135,9 @@ dd {
   margin-right: 150px;
 }
 dd > p {
-  /* border: solid 2px; */
   font-family: Arial, Helvetica, sans-serif;
-  /* width: 55%; */
   text-align: justify;
   color: rgb(64, 64, 64);
-  /* text-indent: 3%; */
 }
 .upDesc {
   text-align: justify;
@@ -169,9 +158,6 @@ li > input {
   width: 35px;
   font-weight: bold;
 }
-/* img {
-  padding-right: 20px;
-} */
 
 input:invalid {
   background-color: lightpink;
@@ -203,8 +189,6 @@ form {
   text-align: center;
   padding: 20px;
   width: calc(50%-100px);
-  /* width: 50%; */
-  /* float: calc(50% - 100px); */
 }
 form > input {
   text-align: center;

@@ -13,26 +13,26 @@
 
 <body>
     <header id="mainHeader" role="banner">
-        <img id="logo" src="assets/Logo_SSINGH.jpg" height="80px" alt="SSingh Project 1 Logo" />
+        <a href=index.html><img id="logo" src="assets/Logo_SSINGH.jpg" height="80px" alt="SSingh Project 1 Logo" /></a>
         <h1>OVERALL FAVORITE</h1>
-        <nav>
+        <nav role="navigation">
             <ul>
-                <a href="index.html" class="navLink">
+                <a href="index.html" title="Methodology" class="navLink">
                     <li>
                         Methodology
                     </li>
                 </a>
-                <a href="favoriteGames.html" class="active-page navLink">
+                <a href="favoriteGames.html" title="Favorite Games" class="active-page navLink">
                     <li>
                         Favorite Games
                     </li>
                 </a>
-                <a href="mostplayed.html" class="navLink">
+                <a href="mostplayed.html" title="Most Played" class="navLink">
                     <li>
                         Most Played
                     </li>
                 </a>
-                <a href="anticipated.html" class="navLink">
+                <a href="anticipated.html" title="Upcoming Games" class="navLink">
                     <li>
                         Upcoming Games
                     </li>
@@ -45,11 +45,11 @@
         <article>
             <header>
                 <aside>
-                    <!--Used <Details> to create drop down disclaimer-->
+                    <!--Used <Details> Element to create drop down disclaimer-->
                     <details>
-                        <!-- used <mark> to highlight word disclaimer -->
+                        <!-- used <mark> element to highlight word disclaimer -->
                         <summary><mark>Disclamer</mark></summary>
-                        <p>I take no responsibility if you buy these games and hate them. This list is based purely on
+                        <p>This list is based purely on
                             my personal enjoyment. my opinion.</p>
                     </details>
                 </aside>
@@ -60,21 +60,20 @@
                     <dl>
                         <dt>
                             <h3>
-                                <!--Readonly attribute highlighting my rating for the game-->
-                                <li id="1" class="kserif">Slay The Spire <input readonly value="9/10"></input></li>
+                                <!-- used Readonly attribute highlighting my rating for the game-->
+                                <li id="1" class="kserif">Slay The Spire <input readonly value="9/10" /></li>
                             </h3>
                         </dt>
                         <dd>
                             <div class="media">
                                 <img class="mediaContent" src="assets/slaythespire.jpg" alt="Slay The Spire artwork" />
-                                <iframe class="mediaContent" width="560" src="https://www.youtube.com/embed/h2m7jCcFaK8"
+                                <iframe class="mediaContent" src="https://www.youtube.com/embed/h2m7jCcFaK8"
                                     title="Slay The Spire Game Review" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen></iframe>
                             </div>
-                            <br />
 
-                            <!-- used <span> to change font weight in inline text-->
+                            <!-- used <span> element to change font weight in inline text-->
                             <p><span class="gameName">Slay The Spire</span> is a deck-building roguelike made
                                 by
                                 Mega
@@ -113,8 +112,7 @@
                         </dd>
                         <dt>
                             <h3>
-                                <li id="2" class="kserif">Grand Theft Auto: San Andreas <input readonly
-                                        value="9/10"></input>
+                                <li id="2" class="kserif">Grand Theft Auto: San Andreas <input readonly value="9/10" />
                                 </li>
                             </h3>
                         </dt>
@@ -147,8 +145,7 @@
                         </dd>
                         <dt>
                             <h3>
-                                <li id="3" class="kserif">Tom Clancy's Rainbow Six Siege <input readonly
-                                        value="8/10"></input>
+                                <li id="3" class="kserif">Tom Clancy's Rainbow Six Siege <input readonly value="8/10" />
                                 </li>
                             </h3>
                         </dt>
@@ -184,7 +181,7 @@
             </section>
             <section id="userFavChoice">
                 <label for="favChoice">Enter the number of the game you like above: </label>
-                <!-- used pattern to define what is acceptable in the input field-->
+                <!-- used pattern attribute to define what is acceptable in the input field-->
                 <input name="favChoice" type="text" id="choice" pattern="[1-3]" required></input>
                 <button onclick="sendAlert(event)" name="favChoice">Submit</button>
                 <script>
@@ -199,7 +196,9 @@
         </article>
     </main>
     <footer role="contentinfo">
-        <p>SSINGH &nbsp;&nbsp;&Verbar;&nbsp;&nbsp; CIT384 - Project 1</p>
+        <p>SSINGH &nbsp;&nbsp;&Verbar;&nbsp;&nbsp; CIT384 - Project 1 &nbsp;&nbsp;&Verbar;&nbsp;&nbsp;<a href="#top"
+                style="padding:0 10px;"><span>Go
+                    To Top</span></a></p>
     </footer>
 </body>
 
