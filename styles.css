@@ -26,6 +26,7 @@ h4 {
   font-family: "Kreon", serif;
 }
 html {
+  /* overflow-y to add scroll bar, prevents nav bar from shifting if missing. */
   overflow-y: scroll;
   background-image: url("assets/controller.jpg");
   background-repeat: no-repeat;
@@ -206,6 +207,7 @@ form label {
   padding-right: 15px;
   padding-bottom: 10px;
 }
+/* resize if screen goes past 1800px  and then resize again if it goes past 2000px*/
 @media screen and (min-width: 1800px) {
   .mediaContent {
     height: 315px;
