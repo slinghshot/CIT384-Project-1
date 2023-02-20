@@ -209,6 +209,14 @@ form label {
   padding-bottom: 10px;
 }
 /* resize if screen goes past 1800px  and then resize again if it goes past 2000px*/
+@media screen and (max-width: 1300px) {
+  nav {
+    padding: 0px 10px 10px 10px;
+    margin: 12px 0px 8px 0px;
+    text-align: right;
+    /* margin-top: -49px; */
+  }
+}
 @media screen and (min-width: 1800px) {
   .mediaContent {
     height: 315px;
