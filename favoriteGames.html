@@ -147,12 +147,15 @@
                 <label for="favChoice">Enter the number of the game you like above: </label>
                 <!-- used pattern attribute to define what is acceptable in the input field-->
                 <input name="favChoice" type="text" id="choice" pattern="[1-3]" required></input>
-                <button onclick="sendAlert(event)" name="favChoice">Submit</button>
+                <button onclick="sendAlert()" name="favChoice">Submit</button>
                 <script>
-                    function sendAlert(e) {
+                    function sendAlert() {
                         let choice = document.getElementById('choice').value
                         if (choice < 4 && choice > 0) {
                             window.location.href = "#" + choice;
+                        }
+                        else {
+                            alert("Enter either 1, 2 or 3! ");
                         }
                     }
                 </script>
