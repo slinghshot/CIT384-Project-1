@@ -1,0 +1,246 @@
+#mainHeader {
+  border-bottom: solid 2px;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(2, 2, 53, 0.836);
+}
+
+h2,
+h3,
+h4 {
+  color: rgb(37, 37, 37);
+}
+
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 24px;
+}
+.subheading {
+  margin-bottom: -10px;
+  text-decoration: underline;
+}
+.kserif {
+  font-family: "Kreon", serif;
+}
+/* background image used for html page, fixed with no-repeat when scrolling */
+html {
+  /* overflow-y to add scroll bar, prevents nav bar from shifting if missing. */
+  overflow-y: scroll;
+  background-image: url("../assets/controller.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-size: cover;
+}
+body {
+  padding: 0px 100px;
+  border: solid 1px;
+  background: #f1eded;
+  opacity: 98%;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* Span inline style example */
+.gameName {
+  font-weight: bold;
+}
+
+/* Navigation bar links stylesheet */
+nav {
+  padding: 0px 10px 10px 10px;
+  margin: 12px 0px 8px 0px;
+  text-align: right;
+  margin-top: -49px;
+}
+
+ul {
+  margin: 20px;
+  display: inline;
+}
+
+.navLink {
+  background-color: #000b5eff;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.active-page {
+  background-color: rgb(108, 137, 218);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navLink:hover,
+.navLink:hover li {
+  background-color: rgb(191, 208, 255);
+  color: #000b5eff;
+}
+
+.navLink li {
+  display: inline;
+  color: rgb(250, 250, 250);
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.08em;
+}
+
+/* inline link colorization and underline */
+.inlink {
+  color: #4848cd;
+  text-decoration: underline;
+}
+.inlink:hover {
+  color: rgb(7, 98, 216);
+}
+/* details and summary for page favorite-games.html */
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+details {
+  border: 1px solid #050f25;
+  border-radius: 2px;
+  padding: 0.5em 0.5em 0;
+  width: 80%;
+}
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #0e2962;
+  margin-bottom: 0.5em;
+}
+details p {
+  font-size: 1.05em;
+}
+
+aside {
+  width: 40%;
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  float: right;
+  font-style: italic;
+  color: #272830;
+}
+
+aside > p {
+  margin: 0.5rem;
+}
+
+dd {
+  margin-right: 150px;
+}
+p {
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(64, 64, 64);
+  text-align: justify;
+}
+
+/* footer properties */
+footer {
+  margin-top: 1%;
+  border-top: solid 2px;
+}
+footer p {
+  text-align: center;
+}
+
+li > input {
+  width: 35px;
+  font-weight: bold;
+}
+
+input:invalid {
+  background-color: lightpink;
+}
+#userFavChoice {
+  text-align: right;
+}
+
+/* table used for pages most-played.html and anticipated.html */
+caption {
+  text-align: center;
+  font-size: 1.5em;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 40%;
+}
+td,
+th {
+  border: 1px solid #bbbbbb;
+  text-align: center;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* form for page most-played.html */
+form {
+  border: dashed 2px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 20px;
+  width: calc(50%-100px);
+}
+form > input {
+  text-align: center;
+}
+form label {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 1.2em;
+}
+
+/* media for div containers containing img and iframe videos */
+.media {
+  width: 110%;
+}
+.mediaContent {
+  height: 315px;
+  width: 460px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+}
+/* resize if screen goes past 1800px  and then resize again if it goes past 2000px*/
+@media screen and (max-width: 1300px) {
+  nav {
+    padding: 0px 10px 10px 10px;
+    margin: 12px 0px 8px 0px;
+    text-align: right;
+    /* margin-top: -49px; */
+  }
+}
+@media screen and (min-width: 1800px) {
+  .mediaContent {
+    height: 315px;
+    width: 540px;
+    padding-right: 15px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .mediaContent {
+    height: 400px;
+    width: 711px;
+    padding-right: 40px;
+  }
+}
